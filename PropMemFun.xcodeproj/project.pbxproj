@@ -37,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		527C0C48210AFD7B0085D414 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				52A4EFB2210A06F1001790EA /* TableViewController.h */,
+				52A4EFB3210A06F1001790EA /* TableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		52A4EF90210A06BA001790EA = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +67,7 @@
 			children = (
 				52A4EF9C210A06BA001790EA /* AppDelegate.h */,
 				52A4EF9D210A06BA001790EA /* AppDelegate.m */,
-				52A4EFB2210A06F1001790EA /* TableViewController.h */,
-				52A4EFB3210A06F1001790EA /* TableViewController.m */,
+				527C0C48210AFD7B0085D414 /* ViewControllers */,
 				52A4EFB5210A07E6001790EA /* SupportingFiles */,
 				52A4EFAB210A06BB001790EA /* main.m */,
 			);
@@ -279,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P99EM85EA2;
 				INFOPLIST_FILE = "$(SRCROOT)/PropMemFun/SupportingFiles/Info.plist";
@@ -296,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P99EM85EA2;
 				INFOPLIST_FILE = "$(SRCROOT)/PropMemFun/SupportingFiles/Info.plist";
