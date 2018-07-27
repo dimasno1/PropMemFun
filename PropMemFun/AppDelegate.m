@@ -17,10 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.window = [[UIWindow alloc] initWithFrame: UIScreen.mainScreen.bounds];
-    
     UITableViewController* rootViewController = [[TableViewController alloc] init];
     
+    self.window = [[UIWindow alloc] initWithFrame: UIScreen.mainScreen.bounds];
     self.window.rootViewController = rootViewController;
     
     [[self window] makeKeyAndVisible];
