@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewController : UITableViewController
+@interface TableViewController : UITableViewController {
+    
+    // Instance variables:
+
+    NSArray* _sushiTypes;
+    NSString* _lastSushiSelected;
+}
 
 @end
+
