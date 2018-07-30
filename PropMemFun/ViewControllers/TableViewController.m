@@ -6,6 +6,7 @@
 //  Copyright © 2018 dimasno1. All rights reserved.
 //
 
+
 #import "TableViewController.h"
 
 @interface TableViewController ()
@@ -81,7 +82,9 @@
                                                    handler:nil];
     
     [alertController addAction: action];
-    [self presentViewController: alertController animated:YES completion: nil];
+    [self presentViewController: alertController animated: YES completion: nil];
+    alertController = nil;
+    action = nil;
     
     [_lastSushiSelected release];
     _lastSushiSelected = nil;

@@ -17,14 +17,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UITableViewController* rootViewController = [[TableViewController alloc] init];
+    UITableViewController* rootViewController = [[[TableViewController alloc] init] autorelease];
     
-    self.window = [[UIWindow alloc] initWithFrame: UIScreen.mainScreen.bounds];
+    self.window = [[[UIWindow alloc] initWithFrame: UIScreen.mainScreen.bounds] autorelease];
     self.window.rootViewController = rootViewController;
     
     [[self window] makeKeyAndVisible];
     
     return YES;
+}
+
+- (void)dealloc {
+    [_window release];
+    _window = nil;
+    
+    [super dealloc];
 }
 
 @end
