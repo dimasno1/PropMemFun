@@ -11,10 +11,16 @@
 @interface TableViewController : UITableViewController {
     
     // Instance variables:
-
+    
     NSArray* _sushiTypes;
     NSString* _lastSushiSelected;
 }
+
+- (NSArray *)getSushiTypes;
+- (void)setSushiTypes: (NSArray *) sushiTypes;
+
+- (NSString *)getLastSushiSelected;
+- (void)setLastSushiSelected: (NSString *) lastSushiSelected;
 
 @end
 
